@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid ${props => props.theme.toggleBg};
 `
 
 export const ToggleDiv = styled.div`
@@ -22,4 +22,37 @@ export const ToggleDiv = styled.div`
     justify-content: ${props => props.themeName !== "light" ? "flex-end" : "flex-start"};
 `
 
+export const Lines = styled.div`
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+`
+
+export const Line1 = styled.div`
+    margin: 3px 15px;
+    width:35px;
+    height: 2px;
+    transform: rotateZ(${props => props.open ? "45deg" : "0deg" });
+    margin: ${props => props.open? "0 15px": "3px 15px"};
+    transition: transform .5s, margin .5s;
+    background-color: ${props => props.theme.text};
+`
+export const Line2 = styled.div`
+    margin: 3px 15px;
+    width:35px;
+    height: 2px;
+    opacity: ${props => props.open ? "0" : "1"};
+    display: ${props => props.open ? "none" : "flex"};
+    transition: opacity .5s;
+    background-color: ${props => props.theme.text};
+`
+export const Line3 = styled.div`
+    
+    width:35px;
+    height: 2px;
+    transform: rotateZ(${props => props.open ? "-45deg" : "0deg" });
+    margin: ${props => props.open? "0 15px": "3px 15px"};
+    transition: transform .5s, margin .5s;
+    background-color: ${props => props.theme.text};
+`
 
