@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
     max-width: 100%;
     height: 60px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     //border-bottom: 1px solid ${props => props.theme.toggleBg};
     background-color: ${props => props.theme.header};
@@ -67,3 +67,21 @@ export const Line3 = styled.div`
     background-color: ${props => props.theme.text};
 `
 
+export const ToggleDiv = styled.div`
+    cursor: pointer;
+    width: 50px;
+    height: 22px;
+    border-radius: 50px;
+    padding: 2px;
+    background-color: ${props => props.theme.toggleBg};
+    display: flex;
+    margin-right: 50px;
+    align-items:center;
+    background-image: url(${props => props.bg});
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: ${props => props.themeName === "light" ? "5%" : "95%"} 50%;
+    @media(max-width: 1000px){
+        display: none;
+    }
+`
