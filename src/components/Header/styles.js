@@ -1,17 +1,33 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
-    padding: 10px 50px;
+    padding: 10px 0;
     max-width: 100%;
     height: 60px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border-bottom: 1px solid ${props => props.theme.toggleBg};
+    //border-bottom: 1px solid ${props => props.theme.toggleBg};
+    background-color: ${props => props.theme.header};
+`
+
+export const MenuArea = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    //background-color: ${props => props.theme.header};
+`
+
+export const Menu = styled.div`
+    display: ${props =>props.open? "none": "none"};
+    flex-direction: column;
+    height: 300px;
+    width: 200px;
 `
 
 export const ToggleDiv = styled.div`
-    cursor:pointer;
+    cursor: pointer;
     width: 50px;
     height: 25px;
     border-radius: 45%;
