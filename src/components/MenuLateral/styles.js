@@ -8,6 +8,7 @@ export const MenuContainer = styled.div`
     align-items: center;
     height: 300px;
     width: 200px;
+    position: absolute;
     background-color: ${props => props.theme.header};
     @media(min-width: 1000px){
         display:none;
@@ -49,3 +50,7 @@ export const Li = styled.li`
     
 `
 
+export const Link = styled.a`
+    cursor: pointer;
+    color: ${props => props.theme.text};
+`

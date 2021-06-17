@@ -1,6 +1,6 @@
-import { React, useState } from 'react';
+import { React} from 'react';
 import { useProvider } from "../../Provider"
-import { HeaderContainer, Menu, Li, Lines, Line1, Line2, Line3, ToggleDiv } from './styles';
+import { HeaderContainer, Menu, Li, Lines, Line1, Line2, Line3, ToggleDiv, Link} from './styles';
 import Sun from "../../assets/sun.svg"
 import Moon from "../../assets/moon.svg"
 
@@ -20,10 +20,10 @@ const Header = () => {
     return (
         <HeaderContainer>
             <Menu>
-                <Li selected>Sobre Mim</Li>
-                <Li>Projetos</Li>
-                <Li>Conhecimento</Li>
-                <Li>Contato</Li>
+                <Li><Link href="#sobreMim">Sobre Mim</Link></Li>
+                <Li><Link href="#projetos">Projetos</Link></Li>
+                <Li><Link href="#conhecimentos">Conhecimentos</Link></Li>
+                <Li><Link href="#contato">Contato</Link></Li>
             </Menu>
             
             <Lines  onClick={(e) => handleOpen(e)}>

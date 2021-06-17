@@ -85,3 +85,8 @@ export const ToggleDiv = styled.div`
         display: none;
     }
 `
+
+export const Link = styled.a`
+    cursor: pointer;
+    color: ${props => props.theme.text};
+`

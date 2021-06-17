@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import { MenuContainer, ToggleDiv, Menu, Li} from './styles';
+import React from 'react';
+import { MenuContainer, ToggleDiv, Menu, Li, Link} from './styles';
 import { useProvider } from "../../Provider"
 import Sun from "../../assets/sun.svg"
 import Moon from "../../assets/moon.svg"
@@ -18,10 +18,10 @@ const MenuLateral = () => {
         <MenuContainer open={openMenu}>
             <ToggleDiv onClick={(e) => handleClick(e)} bg={icon} themeName={themeName}></ToggleDiv>
             <Menu>
-                <Li selected>Sobre Mim</Li>
-                <Li>Projetos</Li>
-                <Li>Conhecimento</Li>
-                <Li>Contato</Li>
+                <Li><Link href="#sobreMim">Sobre Mim</Link></Li>
+                <Li><Link href="#projetos">Projetos</Link></Li>
+                <Li><Link href="#conhecimentos">Conhecimentos</Link></Li>
+                <Li><Link href="#contato">Contato</Link></Li>
             </Menu>
         </MenuContainer>
     );
