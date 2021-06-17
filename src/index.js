@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { SetThemeProvider } from "./SetThemeProvider";
+import { Provider } from "./Provider";
 
 ReactDOM.render(
   <React.StrictMode>
-    <SetThemeProvider>
+    <Provider>
       <App />
-    </SetThemeProvider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

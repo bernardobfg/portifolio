@@ -5,43 +5,39 @@ export const HeaderContainer = styled.header`
     max-width: 100%;
     height: 60px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     //border-bottom: 1px solid ${props => props.theme.toggleBg};
     background-color: ${props => props.theme.header};
 `
 
-export const MenuArea = styled.div`
+export const Menu = styled.ul`
     display: flex;
-    flex-direction: column;
-    width: 200px;
     align-items: center;
-    //background-color: ${props => props.theme.header};
+    color: ${props => props.theme.text};
+    margin-left: 50px;
+    background-color: ${props => props.theme.header};
+    @media(max-width: 1000px){
+        display:none;
+    }
 `
 
-export const Menu = styled.div`
-    display: ${props =>props.open? "none": "none"};
-    flex-direction: column;
-    height: 300px;
-    width: 200px;
-`
-
-export const ToggleDiv = styled.div`
+export const Li = styled.li`
     cursor: pointer;
-    width: 50px;
-    height: 25px;
-    border-radius: 45%;
-    padding: 2px;
-    background-color: ${props => props.theme.toggleBg};
-    display: flex;
-    align-items:center;
-    justify-content: ${props => props.themeName !== "light" ? "flex-end" : "flex-start"};
+    font-size: 1.2em;
+    margin: 0 15px;
+    margin-top: ${props => props.selected? "5px": null};
+    border-bottom: ${props => props.selected? `1px solid ${props.theme.toggleBg}`: null};
+    
 `
 
 export const Lines = styled.div`
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    @media(min-width: 1000px){
+        display:none;
+    }
 `
 
 export const Line1 = styled.div`
