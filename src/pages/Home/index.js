@@ -1,5 +1,5 @@
 import React from "react"
-import { Container } from "./styles"
+import { Container, Teste } from "./styles"
 
 import Header from "../../components/Header"
 import MenuLateral from "../../components/MenuLateral"
@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <Container>
             <Header />
-            <MenuLateral/>
+            <MenuLateral />
         </Container>
     )
 }
