@@ -9,6 +9,9 @@ export const MenuContainer = styled.div`
     height: 300px;
     width: 200px;
     background-color: ${props => props.theme.header};
+    @media(min-width: 1000px){
+        display:none;
+    }
 `
 
 export const ToggleDiv = styled.div`
@@ -20,7 +23,29 @@ export const ToggleDiv = styled.div`
     background-color: ${props => props.theme.toggleBg};
     display: flex;
     align-items:center;
-    justify-content: ${props => props.themeName !== "light" ? "flex-end" : "flex-start"};
+    background-image: url(${props => props.bg});
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: ${props => props.themeName === "light" ? "5%" : "95%"} 50%;
+    //justify-content: ${props => props.themeName !== "light" ? "flex-end" : "flex-start"};
+`
+export const Menu = styled.ul`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: ${props => props.theme.text};
+    @media(min-width: 1000px){
+        display:none;
+    }
 `
 
+export const Li = styled.li`
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 15px 0;
+    margin-top: ${props => props.selected? "5px": null};
+    border-bottom: ${props => props.selected? `1px solid ${props.theme.toggleBg}`: null};
+    
+`
 

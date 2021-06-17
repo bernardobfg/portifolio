@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { MenuContainer, ToggleDiv} from './styles';
+import { MenuContainer, ToggleDiv, Menu, Li} from './styles';
 import { useProvider } from "../../Provider"
 import Sun from "../../assets/sun.svg"
 import Moon from "../../assets/moon.svg"
@@ -10,16 +10,22 @@ const MenuLateral = () => {
     
     const handleClick = async (e) => {
         e.preventDefault()
+        localStorage.setItem("theme",themeName === "light" ? "dark" : "light")
         await setThemeName(themeName === "light" ? "dark" : "light")
         setIcon(icon === Sun ? Moon : Sun)
-        localStorage.setItem("theme",themeName)
+        
     }
     
     return (
         <MenuContainer open={openMenu}>
-            <ToggleDiv onClick={(e) => handleClick(e)}>
-                <img src={icon} alt="toggleIcon"/>
+            <ToggleDiv onClick={(e) => handleClick(e)} bg={icon} themeName={themeName}>
             </ToggleDiv>
+            <Menu>
+                <Li selected>Sobre Mim</Li>
+                <Li>Projetos</Li>
+                <Li>Conhecimento</Li>
+                <Li>Contato</Li>
+            </Menu>
         </MenuContainer>
     );
 }

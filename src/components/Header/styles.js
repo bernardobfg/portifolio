@@ -16,7 +16,6 @@ export const Menu = styled.ul`
     align-items: center;
     color: ${props => props.theme.text};
     margin-left: 50px;
-    background-color: ${props => props.theme.header};
     @media(max-width: 1000px){
         display:none;
     }
