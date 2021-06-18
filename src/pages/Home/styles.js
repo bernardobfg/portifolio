@@ -24,7 +24,6 @@ export const Title = styled.h1`
     text-align: center;
     font-size: 1.7em;
     color: ${props => props.theme.text};
-    width: 150px;
     padding-bottom: 2px;
     border-bottom: 1px solid ${props => props.theme.toggleBg};
 `

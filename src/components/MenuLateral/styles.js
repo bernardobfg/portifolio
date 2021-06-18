@@ -46,11 +46,14 @@ export const Li = styled.li`
     font-size: 1.2em;
     margin: 15px 0;
     margin-top: ${props => props.selected? "5px": null};
-    border-bottom: ${props => props.selected? `1px solid ${props.theme.toggleBg}`: null};
+    
     
 `
 
 export const Link = styled.a`
     cursor: pointer;
     color: ${props => props.theme.text};
+    &:hover{
+        opacity: 0.5;
+    }
 `

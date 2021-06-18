@@ -12,4 +12,7 @@ export default createGlobalStyle`
     ul{
         list-style: none;
     }
+    html {
+        scroll-behavior: smooth;
+    }
 `

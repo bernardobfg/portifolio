@@ -23,7 +23,7 @@ export const Menu = styled.ul`
 
 export const Li = styled.li`
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin: 0 15px;
     margin-top: ${props => props.selected? "5px": null};
     border-bottom: ${props => props.selected? `1px solid ${props.theme.toggleBg}`: null};
@@ -89,4 +89,7 @@ export const ToggleDiv = styled.div`
 export const Link = styled.a`
     cursor: pointer;
     color: ${props => props.theme.text};
+    &:hover{
+        border-bottom: 3px solid ${props => props.theme.toggleBg};
+    }
 `
