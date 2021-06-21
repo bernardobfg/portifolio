@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.div`
     background-color: ${props => props.theme.background};
-    width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
     padding-bottom: 50px;
 `
@@ -22,7 +22,8 @@ export const Section = styled.section`
 `
 export const Title = styled.h1`
     text-align: center;
-    font-size: 1.7em;
+    font-size: 2.2em;
+    margin-bottom: 15px;
     color: ${props => props.theme.text};
     padding-bottom: 2px;
 `

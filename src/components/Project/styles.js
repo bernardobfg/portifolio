@@ -9,7 +9,13 @@ export const Container = styled.div`
     align-items:center;
     padding: 0 20px;;
     background-color: ${props => props.theme.auxiliar};
-    border-top: 1px solid ${props => props.theme.primary};
+    border-radius: 5px;
+    margin: 0 20px;
+    border-top: 10px solid ${props => props.theme.auxiliar};
+    transition: border-top 2s;
+    &:hover{
+        border-top: 10px solid ${props => props.theme.primary};
+    }
 `
 
 export const ProjectName = styled.h1`
@@ -41,4 +47,10 @@ export const ProjectLink = styled.button`
     height: 45px;
     width: 150px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        opacity: 0.8;
+    }
 `
