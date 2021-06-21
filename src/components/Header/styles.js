@@ -7,8 +7,8 @@ export const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //border-bottom: 1px solid ${props => props.theme.toggleBg};
-    background-color: ${props => props.theme.header};
+    //border-bottom: 1px solid ${props => props.theme.primary};
+    background-color: ${props => props.theme.auxiliar};
 `
 
 export const Menu = styled.ul`
@@ -26,7 +26,7 @@ export const Li = styled.li`
     font-size: 1.3em;
     margin: 0 15px;
     margin-top: ${props => props.selected? "5px": null};
-    border-bottom: ${props => props.selected? `1px solid ${props.theme.toggleBg}`: null};
+    border-bottom: ${props => props.selected? `1px solid ${props.theme.primary}`: null};
     
 `
 
@@ -73,7 +73,7 @@ export const ToggleDiv = styled.div`
     height: 22px;
     border-radius: 50px;
     padding: 2px;
-    background-color: ${props => props.theme.toggleBg};
+    background-color: ${props => props.theme.primary};
     display: flex;
     margin-right: 50px;
     align-items:center;
@@ -90,6 +90,6 @@ export const Link = styled.a`
     cursor: pointer;
     color: ${props => props.theme.text};
     &:hover{
-        border-bottom: 3px solid ${props => props.theme.toggleBg};
+        border-bottom: 3px solid ${props => props.theme.primary};
     }
 `

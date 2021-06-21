@@ -25,11 +25,14 @@ export const Title = styled.h1`
     font-size: 1.7em;
     color: ${props => props.theme.text};
     padding-bottom: 2px;
-    border-bottom: 1px solid ${props => props.theme.toggleBg};
 `
 export const AboutMe = styled.div`
     color: ${props => props.theme.text};
     margin-top: 20px;
     font-size: 1.3em;
     letter-spacing: 1px;
+`
+
+export const Projects = styled.div`
+    display: flex;
 `

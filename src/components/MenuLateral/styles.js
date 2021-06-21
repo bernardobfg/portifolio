@@ -9,7 +9,7 @@ export const MenuContainer = styled.div`
     height: 300px;
     width: 200px;
     position: absolute;
-    background-color: ${props => props.theme.header};
+    background-color: ${props => props.theme.auxiliar};
     @media(min-width: 1000px){
         display:none;
     }
@@ -21,7 +21,7 @@ export const ToggleDiv = styled.div`
     height: 22px;
     border-radius: 50px;
     padding: 2px;
-    background-color: ${props => props.theme.toggleBg};
+    background-color: ${props => props.theme.primary};
     display: flex;
     align-items:center;
     background-image: url(${props => props.bg});
