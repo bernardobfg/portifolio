@@ -7,6 +7,7 @@ export default createGlobalStyle`
         outline: 0;
         text-decoration: none;
         border: none;
+        font-family: "Roboto", sans-serif;
     };
     
     ul{
