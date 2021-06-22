@@ -40,6 +40,7 @@ export const ProjectLinks = styled.div`
 export const ProjectLink = styled.button`
     color: ${props => props.theme.text};
     background-color: ${props => props.theme.primary};
+    //background-image: radial-gradient(circle at 66.04% 50%, #a62de0 0, #7a10d3 100%);
     margin: 10px 15px;
     font-size: 1.1em;
     font-weight: 500;

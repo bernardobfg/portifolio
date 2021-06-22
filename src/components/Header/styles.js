@@ -33,6 +33,7 @@ export const Li = styled.li`
 export const Lines = styled.div`
     display: flex;
     flex-direction: column;
+    margin-left: 30px;
     cursor: pointer;
     @media(min-width: 1000px){
         display:none;
@@ -40,31 +41,33 @@ export const Lines = styled.div`
 `
 
 export const Line1 = styled.div`
-    margin: 3px 15px;
     width:35px;
     height: 2px;
     transform: rotateZ(${props => props.open ? "45deg" : "0deg" });
-    margin: ${props => props.open? "0 15px": "3px 15px"};
     transition: transform .5s, margin .5s;
     background-color: ${props => props.theme.text};
+    position: relative;
+    bottom: ${props => props.open? "-1px": "8px"};
 `
 export const Line2 = styled.div`
-    margin: 3px 15px;
     width:35px;
     height: 2px;
     opacity: ${props => props.open ? "0" : "1"};
     display: ${props => props.open ? "none" : "flex"};
     transition: opacity .5s;
     background-color: ${props => props.theme.text};
+    position:relative;
 `
 export const Line3 = styled.div`
     
     width:35px;
     height: 2px;
     transform: rotateZ(${props => props.open ? "-45deg" : "0deg" });
-    margin: ${props => props.open? "0 15px": "3px 15px"};
+    //margin: ${props => props.open? "0 15px": "3px 15px"};
     transition: transform .5s, margin .5s;
     background-color: ${props => props.theme.text};
+    position: relative;
+    top: ${props => props.open? "0px": "8px"};
 `
 
 export const ToggleDiv = styled.div`
