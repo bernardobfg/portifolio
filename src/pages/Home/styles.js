@@ -22,7 +22,7 @@ export const Section = styled.section`
 `
 export const Title = styled.h1`
     text-align: center;
-    font-size: 2.2em;
+    font-size: 1.8em;
     margin-bottom: 15px;
     color: ${props => props.theme.text};
     padding-bottom: 2px;
@@ -30,7 +30,7 @@ export const Title = styled.h1`
 export const AboutMe = styled.div`
     color: ${props => props.theme.text};
     margin-top: 20px;
-    font-size: 1.3em;
+    font-size: 1.1em;
     letter-spacing: 1px;
 `
 

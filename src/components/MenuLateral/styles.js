@@ -6,7 +6,7 @@ export const MenuContainer = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 300px;
+    height: 270px;
     width: 200px;
     position: absolute;
     background-color: ${props => props.theme.auxiliar};
@@ -17,8 +17,8 @@ export const MenuContainer = styled.div`
 
 export const ToggleDiv = styled.div`
     cursor: pointer;
-    width: 50px;
-    height: 22px;
+    width: 40px;
+    height: 18px;
     border-radius: 50px;
     padding: 2px;
     background-color: ${props => props.theme.primary};
@@ -43,7 +43,7 @@ export const Menu = styled.ul`
 
 export const Li = styled.li`
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin: 15px 0;
     margin-top: ${props => props.selected? "5px": null};
     

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HeaderContainer = styled.header`
     padding: 10px 0;
     max-width: 100vw;
-    height: 60px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,10 +23,10 @@ export const Menu = styled.ul`
 
 export const Li = styled.li`
     cursor: pointer;
-    font-size: 1.3em;
+    font-size: 1.1em;
     margin: 0 15px;
     margin-top: ${props => props.selected? "5px": null};
-    border-bottom: ${props => props.selected? `1px solid ${props.theme.primary}`: null};
+    
     
 `
 
@@ -69,8 +69,8 @@ export const Line3 = styled.div`
 
 export const ToggleDiv = styled.div`
     cursor: pointer;
-    width: 50px;
-    height: 22px;
+    width: 40px;
+    height: 18px;
     border-radius: 50px;
     padding: 2px;
     background-color: ${props => props.theme.primary};

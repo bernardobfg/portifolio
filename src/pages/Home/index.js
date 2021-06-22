@@ -24,7 +24,7 @@ const Home = () => {
                 <Title>Projetos</Title>        
                 <Projects>
                     {
-                            projetos.map((project, index) => <Project key={index} project={project}/>)
+                        projetos.map((project, index) => <Project key={index} project={project}/>)
                     }
                 </Projects>
             </Section>
