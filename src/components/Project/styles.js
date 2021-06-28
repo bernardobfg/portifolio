@@ -5,7 +5,7 @@ export const Container = styled.div`
     height: 300px;
     display: flex;
     flex-direction:column;
-    justify-content:space-evenly;
+    justify-content: space-between;
     align-items:center;
     padding: 0 20px;;
     background-color: ${props => props.theme.auxiliar};
@@ -37,7 +37,7 @@ export const ProjectLinks = styled.div`
     justify-content:center;
 `
 
-export const ProjectLink = styled.button`
+export const ProjectLink = styled.a`
     color: ${props => props.theme.text};
     background-color: ${props => props.theme.primary};
     //background-image: radial-gradient(circle at 66.04% 50%, #a62de0 0, #7a10d3 100%);

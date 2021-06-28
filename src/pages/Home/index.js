@@ -8,7 +8,16 @@ import Project from "../../components/Project"
 import {projetos} from "../../projetos.js"
 
 const Home = () => {
-    
+        const calcularIdade = () => {
+            const dataAtual = new Date()
+            const ano = dataAtual.getFullYear()
+            const mes = dataAtual.getMonth() + 1
+            const dia = dataAtual.getDate()
+            if (mes < 9 || (mes === 9 && dia < 26)) {
+                return ano-2001
+            }
+            return ano - 2000
+        }
     return (
         <Container>
             <Header />
@@ -17,7 +26,10 @@ const Home = () => {
             <Section id="sobreMim">
                 <Title>Sobre Mim</Title>        
                 <AboutMe>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                    Meu nome é Bernardo Bevilaqua tenho {calcularIdade()} anos e vivo no Rio de Janeiro.
+                    Atualmente estudo engenharia eletrônica e de computação na UFRJ e no início da pândemia, comecei a estudar desenvolvimento web e me encantei pela área.
+                    Além disso, sou consultor de projetos Frontend na Fluxo Consultoria, desenvolvendo aplicações em React.
+                    Também estou buscando explorar novas áreas e por isso, comecei a estudar Node Js.
                 </AboutMe>
             </Section>
             <Section id="projetos">

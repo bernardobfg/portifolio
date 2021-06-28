@@ -3,10 +3,7 @@ import { ProjectName, Container, ProjectDescription, ProjectLinks, ProjectLink }
 import { AiFillGithub } from "react-icons/ai"
 import {BiLink} from "react-icons/bi"
 const Project = ({ project }) => {
-    const handleClick = (e, link) => {
-        e.preventDefault();
-        window.location.href = link
-    }
+    
     return ( 
         <Container>
             <ProjectName>
@@ -16,11 +13,11 @@ const Project = ({ project }) => {
                 {project.description}
             </ProjectDescription>
             <ProjectLinks>
-                <ProjectLink onClick={e => handleClick(e, project.linkSite)}>
+                <ProjectLink href={project.linkSite} target="_blank">
                     <BiLink size="1.2em"/>
                     WebSite
                 </ProjectLink>
-                <ProjectLink onClick={e => handleClick(e, project.linkGit)}>
+                <ProjectLink href={project.linkGit} target="_blank">
                     <AiFillGithub size="1.2em" style={{marginRight: "5px"}}/>
                     Github
                 </ProjectLink>
