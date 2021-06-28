@@ -32,6 +32,18 @@ export const AboutMe = styled.div`
     margin-top: 20px;
     font-size: 1.1em;
     letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    gap: 100px;
+    img{
+        max-width: 350px;
+    }
+
+    p{  
+    }
 `
 
 export const Projects = styled.div`
