@@ -49,3 +49,32 @@ export const AboutMe = styled.div`
 export const Projects = styled.div`
     display: flex;
 `
+
+export const KnowLedgeArea = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 20px;
+`
+export const KnowledgeInformation = styled.div`
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+    color: ${props => props.theme.text};
+    padding: 10px 20px;
+
+    p{
+        text-align: center;
+    }
+
+`
+
+export const KnowledgeCollection = styled.div`
+    display:flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+`

@@ -1,14 +1,26 @@
-import React from "react"
-import { Container,Content, Section, AboutMe, Title, Projects} from "./styles"
+import React, {useState} from "react"
+import {
+    Container,
+    Content,
+    Section,
+    AboutMe,
+    Title, Projects,
+    KnowLedgeArea,
+    KnowledgeInformation, 
+    KnowledgeCollection
+} from "./styles"
 
 import programmer from "../../assets/programmer.svg"
 import Header from "../../components/Header"
 import MenuLateral from "../../components/MenuLateral"
 import Project from "../../components/Project"
+import Knowledge from "../../components/Knowledge"
 
-import {projetos} from "../../projetos.js"
+import { projetos } from "../../projetos.js"
+import {conhecimentos} from "../../conhecimentos.js"
 
 const Home = () => {
+    const [selectedKnowledge, setSelectedKnowledge] = useState(conhecimentos[0])
         const calcularIdade = () => {
             const dataAtual = new Date()
             const ano = dataAtual.getFullYear()
@@ -46,9 +58,29 @@ const Home = () => {
             </Section>
             <Section id="conhecimentos">
                 <Title>Conhecimentos</Title>        
-                <AboutMe>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                </AboutMe>
+                <KnowLedgeArea>
+                    <KnowledgeInformation>
+                            <h3>{selectedKnowledge.nome}</h3>
+                            <p>{selectedKnowledge.descricao}</p>
+                            <h4>Experiência: {selectedKnowledge.experiencia}</h4>
+                    </KnowledgeInformation>
+                    <KnowledgeCollection>
+                    {
+                            conhecimentos.map((conhecimento, index) => {
+                                return (
+                                    <Knowledge
+                                        key={index}
+                                        nome={conhecimento.nome}
+                                        imagem={conhecimento.imagem}
+                                        experiencia={conhecimento.experiencia}
+                                        onClick={() => setSelectedKnowledge(conhecimento)}
+                                        selected={selectedKnowledge === conhecimento}
+                                    />
+                            )
+                        })        
+                    }        
+                    </KnowledgeCollection>
+                </KnowLedgeArea>
             </Section>
             <Section id="contato">
                 <Title>Contato</Title>        

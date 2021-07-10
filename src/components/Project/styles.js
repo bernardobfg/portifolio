@@ -7,7 +7,7 @@ export const Container = styled.div`
     flex-direction:column;
     justify-content: space-between;
     align-items:center;
-    padding: 0 20px;;
+    padding: 20px 20px 0;
     background-color: ${props => props.theme.auxiliar};
     border-radius: 5px;
     margin: 0 20px;
