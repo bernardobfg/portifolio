@@ -12,6 +12,7 @@ export const Content = styled.div`
     display:flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 50px;
     
 `
 
@@ -41,13 +42,32 @@ export const AboutMe = styled.div`
     img{
         max-width: 350px;
     }
+`
 
-    p{  
+export const Contact = styled.div`
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+
+    a{
+        color: ${props => props.theme.text};
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #226383;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
     }
 `
 
 export const Projects = styled.div`
     display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 20px;
 `
 
 export const KnowLedgeArea = styled.div`
