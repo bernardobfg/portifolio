@@ -5,11 +5,16 @@ import {
     Section,
     AboutMe,
     Contact,
+    ContactA,
     Title, Projects,
     KnowLedgeArea,
     KnowledgeInformation, 
     KnowledgeCollection
 } from "./styles"
+
+import { SiGmail } from "react-icons/si"
+import { AiFillGithub } from "react-icons/ai"
+import {GrLinkedinOption} from "react-icons/gr"
 
 import programmer from "../../assets/programmer.svg"
 import Header from "../../components/Header"
@@ -49,9 +54,18 @@ const Home = () => {
                             Também estou buscando explorar novas áreas e por isso, comecei a estudar Node Js.
                         </p>
                         <Contact>
-                                <a href="https://www.linkedin.com/in/bernardo-bevilaqua/">Linkedin</a>
-                                <a href="https://github.com/bernardobfg">Github</a>   
-                                <a href="mailto:bernardo.bfg@poli.ufrj.br">Gmail</a>       
+                                <ContactA href="https://www.linkedin.com/in/bernardo-bevilaqua/" target="_blank" bg="#2867B2">
+                                    <GrLinkedinOption/>
+                                    Linkedin
+                                </ContactA>
+                                <ContactA href="https://github.com/bernardobfg" target="_blank" bg="#333">
+                                    <AiFillGithub/>
+                                    Github
+                                </ContactA>
+                                <ContactA href="mailto:bernardo.bfg@poli.ufrj.br" target="_blank" bg="#E60023">
+                                    <SiGmail/>
+                                    Gmail
+                                </ContactA>
                         </Contact>
                     </div>
                 </AboutMe>
@@ -68,9 +82,9 @@ const Home = () => {
                 <Title>Conhecimentos</Title>        
                 <KnowLedgeArea>
                     <KnowledgeInformation>
-                            <h3>{selectedKnowledge.nome}</h3>
+                            <h2>{selectedKnowledge.nome}</h2>
                             <p>{selectedKnowledge.descricao}</p>
-                            <h4>Experiência: {selectedKnowledge.experiencia}</h4>
+                            <h3>Experiência: {selectedKnowledge.experiencia}</h3>
                     </KnowledgeInformation>
                     <KnowledgeCollection>
                     {

@@ -19,14 +19,20 @@ export const Content = styled.div`
 export const Section = styled.section`
     display: flex;
     flex-direction: column;
-    margin-top: 30px;;
+    width: 100%;
+    margin: 30px 0;
+    &:nth-child(n+2):nth-child(-n+3){
+        h1{
+            border-bottom: 1px solid ${props => props.theme.auxiliar};
+        }
+    }
 `
 export const Title = styled.h1`
     text-align: center;
     font-size: 1.8em;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: ${props => props.theme.text};
-    padding-bottom: 2px;
+    padding-bottom: 10px;
 `
 export const AboutMe = styled.div`
     color: ${props => props.theme.text};
@@ -45,21 +51,26 @@ export const AboutMe = styled.div`
 `
 
 export const Contact = styled.div`
-    width: 50%;
+    width: 70%;
     margin: 20px auto;
     display: flex;
     gap: 20px;
 
-    a{
-        color: ${props => props.theme.text};
-        width: 100px;
-        height: 40px;
-        border-radius: 5px;
-        background-color: #226383;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-
+    
+`
+export const ContactA = styled.a`
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: ${props => props.bg};
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    justify-content:center;
+    transition: filter 0.2s;
+    &:hover{
+        filter: brightness(1.5);
     }
 `
 
@@ -86,6 +97,7 @@ export const KnowledgeInformation = styled.div`
 
     p{
         text-align: center;
+        font-size:1.2em;
     }
 
 `
