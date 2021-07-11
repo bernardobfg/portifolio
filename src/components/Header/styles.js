@@ -84,7 +84,7 @@ export const ToggleDiv = styled.div`
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: ${props => props.themeName === "light" ? "5%" : "95%"} 50%;
-    @media(max-width: 1000px){
+    @media(max-width: 850px){
         display: none;
     }
 `

@@ -5,6 +5,7 @@ import {
     Section,
     AboutMe,
     Contact,
+    ContactMsg,
     ContactA,
     Title, Projects,
     KnowLedgeArea,
@@ -14,7 +15,9 @@ import {
 
 import { SiGmail } from "react-icons/si"
 import { AiFillGithub } from "react-icons/ai"
-import {GrLinkedinOption} from "react-icons/gr"
+import { GrLinkedinOption } from "react-icons/gr"
+import { FaWhatsapp } from "react-icons/fa"
+
 
 import programmer from "../../assets/programmer.svg"
 import Header from "../../components/Header"
@@ -49,24 +52,11 @@ const Home = () => {
                     <div>
                         <p>
                             Meu nome é Bernardo Bevilaqua tenho {calcularIdade()} anos e vivo no Rio de Janeiro.
-                            Atualmente estudo Engenharia Eletrônica e de Computação na UFRJ e no início da pândemia, comecei a estudar desenvolvimento web e me encantei pela área.
+                            Atualmente estudo Engenharia Eletrônica e de Computação na UFRJ e no início da pandemia, comecei a estudar desenvolvimento web e me encantei pela área.
                             Além disso, sou consultor de projetos Frontend na Fluxo Consultoria, desenvolvendo aplicações em React.
-                            Também estou buscando explorar novas áreas e por isso, comecei a estudar Node Js.
+                            Também estou buscando explorar novas áreas e por isso, comecei a estudar tecnologias Back-End.
                         </p>
-                        <Contact>
-                                <ContactA href="https://www.linkedin.com/in/bernardo-bevilaqua/" target="_blank" bg="#2867B2">
-                                    <GrLinkedinOption/>
-                                    Linkedin
-                                </ContactA>
-                                <ContactA href="https://github.com/bernardobfg" target="_blank" bg="#333">
-                                    <AiFillGithub/>
-                                    Github
-                                </ContactA>
-                                <ContactA href="mailto:bernardo.bfg@poli.ufrj.br" target="_blank" bg="#E60023">
-                                    <SiGmail/>
-                                    Gmail
-                                </ContactA>
-                        </Contact>
+                        
                     </div>
                 </AboutMe>
             </Section>
@@ -94,7 +84,6 @@ const Home = () => {
                                         key={index}
                                         nome={conhecimento.nome}
                                         imagem={conhecimento.imagem}
-                                        experiencia={conhecimento.experiencia}
                                         onClick={() => setSelectedKnowledge(conhecimento)}
                                         selected={selectedKnowledge === conhecimento}
                                     />
@@ -103,7 +92,30 @@ const Home = () => {
                     }        
                     </KnowledgeCollection>
                 </KnowLedgeArea>
-            </Section>   
+                </Section>
+            <Section id="contato">
+                <Title>Contato</Title>
+                <ContactMsg>Obrigado pela atenção! Se quiser entrar em contato comigo para qualquer assunto, utilize um dos canais abaixo!</ContactMsg>    
+                <Contact>
+                    <ContactA href="https://www.linkedin.com/in/bernardo-bevilaqua/" target="_blank" bg="#2867B2">
+                        <GrLinkedinOption/>
+                        Linkedin
+                    </ContactA>
+                    <ContactA href="https://github.com/bernardobfg" target="_blank" bg="#333">
+                        <AiFillGithub/>
+                        Github
+                    </ContactA>
+                    <ContactA href="mailto:bernardo.bfg@poli.ufrj.br" target="_blank" bg="#E60023">
+                        <SiGmail/>
+                        Gmail
+                    </ContactA>
+                    <ContactA href="https://web.whatsapp.com/send?phone=5521999034875" target="_blank" bg="#25D366">
+                        <FaWhatsapp/>
+                        WhatsApp
+                    </ContactA>    
+                </Contact>
+            </Section>
+                
             </Content>
         </Container>
     )

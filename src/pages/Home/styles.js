@@ -21,10 +21,8 @@ export const Section = styled.section`
     flex-direction: column;
     width: 100%;
     margin: 30px 0;
-    &:nth-child(n+2):nth-child(-n+3){
-        h1{
-            border-bottom: 1px solid ${props => props.theme.auxiliar};
-        }
+    h1{
+        border-bottom: 1px solid ${props => props.theme.auxiliar};
     }
 `
 export const Title = styled.h1`
@@ -48,15 +46,29 @@ export const AboutMe = styled.div`
     img{
         max-width: 350px;
     }
+    @media(max-width: 850px){
+        justify-content:center;
+        text-align: center;
+        img{
+            display:none ;
+        }
+    }
 `
 
 export const Contact = styled.div`
-    width: 70%;
+    width: 50%;
     margin: 20px auto;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
-
-    
+   
+`
+export const ContactMsg = styled.h4`
+    color: ${props => props.theme.text};
+    margin: 20px auto;
+    width: 60%;
+    text-align: center;
 `
 export const ContactA = styled.a`
     color: #fff;
@@ -85,6 +97,9 @@ export const KnowLedgeArea = styled.div`
     display: flex;
     align-items: center;
     gap: 20px;
+    @media(max-width: 850px){
+        flex-direction: column;
+    }
 `
 export const KnowledgeInformation = styled.div`
     display:flex;
@@ -94,6 +109,9 @@ export const KnowledgeInformation = styled.div`
     width: 40%;
     color: ${props => props.theme.text};
     padding: 10px 20px;
+    @media(max-width: 850px){
+        width: 60%
+    }
 
     p{
         text-align: center;
@@ -109,4 +127,7 @@ export const KnowledgeCollection = styled.div`
     justify-content: center;
     width: 60%;
     margin: 0 auto;
+    @media(max-width: 850px){
+        width: 60%
+    }
 `

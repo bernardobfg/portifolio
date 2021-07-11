@@ -1,6 +1,6 @@
 export const lightTheme = {
     background: "#F0F0F0",
-    auxiliar: "#B8B8B8",
+    auxiliar: "#e5e5e5",
     text: "#000",
     primary: "#299CCD"
 }

@@ -1,8 +1,9 @@
 import {Container} from "./styles"
-
-const Knowledge = ({ nome, imagem, experiencia, selected, onClick }) => {
+import {useProvider} from "../../Provider"
+const Knowledge = ({ nome, imagem, selected, onClick }) => {
+    const {themeName} = useProvider()
     return(
-        <Container selected={selected} onClick={onClick}>
+        <Container selected={selected} onClick={onClick} themeName={themeName}>
             <img src={imagem} alt={nome}/>
         </Container>
     )

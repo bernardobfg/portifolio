@@ -10,7 +10,7 @@ export const MenuContainer = styled.div`
     width: 200px;
     position: absolute;
     background-color: ${props => props.theme.auxiliar};
-    @media(min-width: 1000px){
+    @media(min-width: 850px){
         display:none;
     }
 `

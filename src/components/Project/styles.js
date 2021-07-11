@@ -9,6 +9,7 @@ export const Container = styled.div`
     align-items:center;
     padding: 20px 20px 0;
     background-color: ${props => props.theme.auxiliar};
+    box-shadow: 0 4px 10px 0 rgba( 31, 38, 135, 0.37 );
     border-radius: 5px;
     margin: 0 20px;
     border-top: 10px solid ${props => props.theme.auxiliar};
@@ -38,9 +39,8 @@ export const ProjectLinks = styled.div`
 `
 
 export const ProjectLink = styled.a`
-    color: ${props => props.theme.text};
+    color: #F0F0F0;
     background-color: ${props => props.theme.primary};
-    //background-image: radial-gradient(circle at 66.04% 50%, #a62de0 0, #7a10d3 100%);
     margin: 10px 15px;
     font-size: 1.1em;
     font-weight: 500;
