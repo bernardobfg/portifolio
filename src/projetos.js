@@ -12,9 +12,15 @@ export const projetos = [
         linkGit: "https://github.com/bernardobfg/nlw-Letmeask"
     },
     {
+        name: "Spotify",
+        description: "Projeto clone do Spotify, uma das maiores plataformas de streaming de música do mundo. Feito apenas com HTML e CSS e utilizando Bootstrap",
+        linkSite: "https://spotify-bernardobfg.vercel.app/",
+        linkGit: "https://github.com/bernardobfg/spotify"
+    },
+    /*{
         name: "TodoApp",
         description: "Projeto realizado com objetivo de praticar um pouco mais o funcionamento do firebase. Nele o usuário pode fazer login e cadastras tarefas a serem realizadas (Todos), marcá-las como concluídas e apagá-las",
         linkSite: "#",
         linkGit: "https://github.com/bernardobfg/todoapp"
-    }
+    }*/
 ]

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import HamburgerMenu from "react-hamburger-menu";
 export const HeaderContainer = styled.header`
     padding: 10px 0;
     max-width: 100vw;
@@ -9,14 +9,16 @@ export const HeaderContainer = styled.header`
     align-items: center;
     //border-bottom: 1px solid ${props => props.theme.primary};
     background-color: ${props => props.theme.auxiliar};
+    
 `
 
 export const Menu = styled.ul`
     display: flex;
     align-items: center;
-    color: ${props => props.theme.text};
+    //color: ${props => props.theme.text};
+    color: #F0F0F0;
     margin-left: 50px;
-    @media(max-width: 1000px){
+    @media(max-width: 850px){
         display:none;
     }
 `
@@ -30,45 +32,15 @@ export const Li = styled.li`
     
 `
 
-export const Lines = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
+export const HamburgerBtn = styled(HamburgerMenu)`
+    display: block;
+    margin-left: ${props => props.isOpen ? "90px": "30px"};
     cursor: pointer;
-    @media(min-width: 1000px){
+    @media(min-width: 850px){
         display:none;
     }
 `
 
-export const Line1 = styled.div`
-    width:35px;
-    height: 2px;
-    transform: rotateZ(${props => props.open ? "45deg" : "0deg" });
-    transition: transform .5s, margin .5s;
-    background-color: ${props => props.theme.text};
-    position: relative;
-    bottom: ${props => props.open? "-1px": "8px"};
-`
-export const Line2 = styled.div`
-    width:35px;
-    height: 2px;
-    opacity: ${props => props.open ? "0" : "1"};
-    display: ${props => props.open ? "none" : "flex"};
-    transition: opacity .5s;
-    background-color: ${props => props.theme.text};
-    position:relative;
-`
-export const Line3 = styled.div`
-    
-    width:35px;
-    height: 2px;
-    transform: rotateZ(${props => props.open ? "-45deg" : "0deg" });
-    //margin: ${props => props.open? "0 15px": "3px 15px"};
-    transition: transform .5s, margin .5s;
-    background-color: ${props => props.theme.text};
-    position: relative;
-    top: ${props => props.open? "0px": "8px"};
-`
 
 export const ToggleDiv = styled.div`
     cursor: pointer;

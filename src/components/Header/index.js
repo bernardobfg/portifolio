@@ -1,6 +1,7 @@
 import { React} from 'react';
 import { useProvider } from "../../Provider"
-import { HeaderContainer, Menu, Li, Lines, Line1, Line2, Line3, ToggleDiv, Link} from './styles';
+import HamburgerMenu from "react-hamburger-menu"
+import { HeaderContainer, Menu, Li, ToggleDiv, Link, HamburgerBtn} from './styles';
 import Sun from "../../assets/sun.svg"
 import Moon from "../../assets/moon.svg"
 
@@ -26,11 +27,18 @@ const Header = () => {
                 <Li><Link href="#contato">Contato</Link></Li>
             </Menu>
             
-            <Lines  onClick={(e) => handleOpen(e)}>
-                <Line1 open={openMenu}/>
-                <Line2 open={openMenu}/>
-                <Line3 open={openMenu}/>
-            </Lines>
+            <HamburgerBtn
+                isOpen={openMenu}
+                menuClicked={() => setOpenMenu(!openMenu)}
+                width={24}
+                height={18}
+                strokeWidth={1.5}
+                rotate={0}
+                color={themeName ==="light"? "#000" :"#fff"}
+                borderRadius={0}
+                animationDuration={0.5}
+            />
+            
 
             <ToggleDiv onClick={(e) => handleClick(e)} bg={icon} themeName={themeName}/>
         </HeaderContainer>
