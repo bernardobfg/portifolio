@@ -104,6 +104,12 @@ export const Input = styled.input`
     &:focus{
         border: 2px solid ${props => props.theme.primary}; 
     }
+    @media(max-width: 600px){
+        width: 80%;
+    }
+    @media(max-width: 400px){
+        width: 90%;
+    }
 `
 
 export const TextArea = styled.textarea`
@@ -118,6 +124,12 @@ export const TextArea = styled.textarea`
     padding: 10px;
     &:focus{
         border: 2px solid ${props => props.theme.primary}; 
+    }
+    @media(max-width: 600px){
+        width: 80%;
+    }
+    @media(max-width: 400px){
+        width: 90%;
     }
 `
 
