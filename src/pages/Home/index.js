@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import ReactLoading from "react-loading";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { database } from "../../services/firebase"
+import { ref, push,  } from "firebase/database";
 import {
     Container,
     Content,
@@ -61,19 +63,23 @@ const Home = () => {
         progress: undefined,
     };
     
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault()
         setIsLoading(true)
+        const contact = {name, email, message}
         try {
+            await push(ref(database, 'contacts/'), contact);
             toast.success('Mensagem enviada com sucesso', toastProps);
         }
-        catch {
+        catch (error) {
+            console.log(error)
             toast.error('Erro ao enviar mensagem', toastProps);
         }
         
-        setTimeout(() =>
-            setIsLoading(false)
-            , 2000)
+        setIsLoading(false)
+        setName("")
+        setMessage("")
+        setEmail("")
     }
     return (
         <Container>
