@@ -15,8 +15,7 @@ export const HeaderContainer = styled.header`
 export const Menu = styled.ul`
     display: flex;
     align-items: center;
-    //color: ${props => props.theme.text};
-    color: #F0F0F0;
+    color: ${props => props.theme.text};
     margin-left: 50px;
     @media(max-width: 850px){
         display:none;

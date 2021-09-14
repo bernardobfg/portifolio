@@ -1,16 +1,12 @@
 import { React} from 'react';
 import { useProvider } from "../../Provider"
-import HamburgerMenu from "react-hamburger-menu"
 import { HeaderContainer, Menu, Li, ToggleDiv, Link, HamburgerBtn} from './styles';
 import Sun from "../../assets/sun.svg"
 import Moon from "../../assets/moon.svg"
 
 const Header = () => {
     const { openMenu, setOpenMenu, themeName, setThemeName, icon, setIcon } = useProvider();
-    const handleOpen = (e) => {
-        e.preventDefault()
-        setOpenMenu(!openMenu)
-    }
+
 
     const handleClick = async (e) => {
         e.preventDefault()
