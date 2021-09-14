@@ -55,7 +55,7 @@ export const AboutMe = styled.div`
     }
 `
 
-export const Contact = styled.div`
+export const ContactLinks = styled.div`
     width: 50%;
     margin: 20px auto;
     display: flex;
@@ -64,13 +64,13 @@ export const Contact = styled.div`
     gap: 20px;
    
 `
-export const ContactMsg = styled.h4`
+export const ContactDiscription = styled.h4`
     color: ${props => props.theme.text};
     margin: 20px auto;
     width: 60%;
     text-align: center;
 `
-export const ContactA = styled.a`
+export const ContactLink = styled.a`
     color: #fff;
     width: 150px;
     height: 40px;
@@ -84,6 +84,55 @@ export const ContactA = styled.a`
     &:hover{
         filter: brightness(1.5);
     }
+`
+export const Form = styled.form`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+`
+export const Input = styled.input`
+    background-color: ${props => props.theme.auxiliar};
+    color: ${props => props.theme.text};
+    border: 2px solid black;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    &:focus{
+        border: 2px solid ${props => props.theme.primary}; 
+    }
+`
+
+export const TextArea = styled.textarea`
+    background-color: ${props => props.theme.auxiliar};
+    color: ${props => props.theme.text};
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    font-size: 16px;
+    border-radius: 10px;
+    resize: none;
+    padding: 10px;
+    &:focus{
+        border: 2px solid ${props => props.theme.primary}; 
+    }
+`
+
+export const SubmitBtn = styled.button`
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: ${props => props.theme.primary};
+    color: ${props => props => props.theme.text};
+    font-size: 16px;
+    font-weight: 600;
+    cursor: ${props => props.disabled? "not-allowed": "pointer"};
+    display: flex;
+    align-items:center;
+    justify-content: center;
 `
 
 export const Projects = styled.div`
