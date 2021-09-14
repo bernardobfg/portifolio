@@ -95,7 +95,7 @@ export const Form = styled.form`
 export const Input = styled.input`
     background-color: ${props => props.theme.auxiliar};
     color: ${props => props.theme.text};
-    border: 2px solid black;
+    border: 2px solid ${props => props.theme.background};;
     width: 400px;
     height: 30px;
     border-radius: 5px;
@@ -115,7 +115,7 @@ export const Input = styled.input`
 export const TextArea = styled.textarea`
     background-color: ${props => props.theme.auxiliar};
     color: ${props => props.theme.text};
-    border: 2px solid black;
+    border: 2px solid ${props => props.theme.background};;
     width: 400px;
     height: 200px;
     font-size: 16px;
@@ -138,13 +138,16 @@ export const SubmitBtn = styled.button`
     height: 40px;
     border-radius: 10px;
     background-color: ${props => props.theme.primary};
-    color: ${props => props => props.theme.text};
+    color: #F0F0F0;
     font-size: 16px;
     font-weight: 600;
     cursor: ${props => props.disabled? "not-allowed": "pointer"};
     display: flex;
     align-items:center;
     justify-content: center;
+    &:hover{
+        filter: brightness(${props => props.disabled? '1': '1.1'});
+    }
 `
 
 export const Projects = styled.div`

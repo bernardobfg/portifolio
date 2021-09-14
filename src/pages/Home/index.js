@@ -191,7 +191,7 @@ const Home = () => {
                         />
                         <SubmitBtn
                             onClick={(event) => handleSubmit(event)}
-                            disabled={!name && !email && !message}
+                            disabled={!name || !email || !message}
                         >
                             {
                                 isLoading ?
