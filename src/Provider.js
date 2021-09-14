@@ -4,19 +4,17 @@ import Moon from "./assets/moon.svg"
 const Context = createContext();
 export const Provider = ({ children }) => {
 
-    const [themeName, setThemeName] = useState("")
-    const [openMenu, setOpenMenu] = useState(false)
-    
-    useEffect(() => {
+    const [themeName, setThemeName] = useState(() => {
         const storage = localStorage.getItem("theme")
         if (storage) {
-            setThemeName(storage)
+            return(storage)
         }
         else {
-            setThemeName("light")
-            localStorage.setItem("theme", "light")
+            return "light";
         }
-    },[])
+    })
+    const [openMenu, setOpenMenu] = useState(false)
+    
     const [icon, setIcon] = useState(themeName === "light" ? Sun : Moon)
 
     return (
