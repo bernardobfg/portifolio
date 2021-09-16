@@ -13,7 +13,9 @@ export const Content = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 0 50px;
-    
+    @media(max-width: 600px){
+        padding: 0 20px;
+    }
 `
 
 export const Section = styled.section`
