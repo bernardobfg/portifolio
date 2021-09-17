@@ -17,6 +17,12 @@ export const projetos = [
         linkSite: "https://spotify-bernardobfg.vercel.app/",
         linkGit: "https://github.com/bernardobfg/spotify"
     },
+    {
+        name: "Typing Game",
+        description: "Projeto bem simples feito durante a Maratona JS3 do Emerson Broga com algumas melhorias posteriores. O intuito do projeto é ser um jogo de digitação para o usuário treinar suas habilidades",
+        linkSite: "https://typing-game-bernardobfg.vercel.app/",
+        linkGit: "https://github.com/bernardobfg/typing-game"
+    },
     /*{
         name: "TodoApp",
         description: "Projeto realizado com objetivo de praticar um pouco mais o funcionamento do firebase. Nele o usuário pode fazer login e cadastras tarefas a serem realizadas (Todos), marcá-las como concluídas e apagá-las",
