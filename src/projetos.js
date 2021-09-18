@@ -23,6 +23,12 @@ export const projetos = [
         linkSite: "https://typing-game-bernardobfg.vercel.app/",
         linkGit: "https://github.com/bernardobfg/typing-game"
     },
+    {
+        name: "Rock Paper Scissors",
+        description: "Projeto inspirado em um desafio do FrontEnd Mentor, que consiste no clássico jogo de pedra papel e tesoura",
+        linkSite: "https://rock-paper-scissors-bernardobfg.vercel.app/",
+        linkGit: "https://github.com/bernardobfg/rock-paper-scissors"
+    },
     /*{
         name: "TodoApp",
         description: "Projeto realizado com objetivo de praticar um pouco mais o funcionamento do firebase. Nele o usuário pode fazer login e cadastras tarefas a serem realizadas (Todos), marcá-las como concluídas e apagá-las",
