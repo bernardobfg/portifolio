@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import blob from "../../assets/blob.svg"
 export const Container = styled.div`
     background-color: ${props => props.theme.background};
     max-width: 100vw;
@@ -45,9 +45,7 @@ export const AboutMe = styled.div`
     width: 90%;
     margin: 0 auto;
     gap: 100px;
-    img{
-        max-width: 350px;
-    }
+    
     @media(max-width: 850px){
         justify-content:center;
         text-align: center;
@@ -56,7 +54,13 @@ export const AboutMe = styled.div`
         }
     }
 `
+export const ImgContainer = styled.div`
+    background: none;
+    @media(max-width: 850px){
+        display:none;
+    }
 
+`
 export const ContactLinks = styled.div`
     width: 50%;
     margin: 20px auto;

@@ -19,7 +19,8 @@ import {
     Title, Projects,
     KnowLedgeArea,
     KnowledgeInformation, 
-    KnowledgeCollection
+    KnowledgeCollection,
+    ImgContainer
 } from "./styles"
 
 import { SiGmail } from "react-icons/si"
@@ -34,8 +35,9 @@ import MenuLateral from "../../components/MenuLateral"
 import Project from "../../components/Project"
 import Knowledge from "../../components/Knowledge"
 
-import { projetos } from "../../projetos.js"
-import {conhecimentos} from "../../conhecimentos.js"
+import { projetos } from "../../data/projetos.js"
+import {conhecimentos} from "../../data/conhecimentos.js"
+import { Dev } from "../../components/Dev";
 
 const Home = () => {
     const [selectedKnowledge, setSelectedKnowledge] = useState(conhecimentos[0])
@@ -43,6 +45,7 @@ const Home = () => {
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
     const [isLoading, setIsLoading] = useState(false)
+    const [isAnimationPlaying, setIsAnimationPlaying] = useState(false)
     const calcularIdade = () => {
         const dataAtual = new Date()
         const ano = dataAtual.getFullYear()
@@ -100,7 +103,13 @@ const Home = () => {
                 <Section id="sobreMim">
                     <Title>Sobre Mim</Title>
                     <AboutMe>
-                        <img src={programmer} alt="Programador" />
+                        <ImgContainer
+                            onMouseEnter={() => setIsAnimationPlaying(true)}
+                            onMouseLeave={() => setIsAnimationPlaying(false)}
+                        >
+                            <Dev isAnimationPlaying={isAnimationPlaying}/>
+                         </ImgContainer>
+                        
                         <div>
                             <p>
                                 Meu nome é Bernardo Bevilaqua tenho {calcularIdade()} anos e vivo no Rio de Janeiro.
@@ -191,7 +200,7 @@ const Home = () => {
                         />
                         <SubmitBtn
                             onClick={(event) => handleSubmit(event)}
-                            disabled={!name || !email || !message}
+                            disabled={!name.trim() || !email.trim() || !message.trim()}
                         >
                             {
                                 isLoading ?

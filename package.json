@@ -12,6 +12,7 @@
     "react-hamburger-menu": "^1.2.1",
     "react-icons": "^4.2.0",
     "react-loading": "^2.0.3",
+    "react-lottie": "^1.2.3",
     "react-scripts": "4.0.3",
     "react-toastify": "^8.0.2",
     "styled-components": "^5.3.0",

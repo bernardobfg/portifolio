@@ -1,8 +1,9 @@
-import js from "./assets/javascript.png"
-import react from "./assets/react.png"
-import css from "./assets/css.png"
-import html from "./assets/html.png"
-import python from "./assets/python.png"
+import js from "../assets/javascript.png"
+import react from "../assets/react.png"
+import css from "../assets/css.png"
+import html from "../assets/html.png"
+import python from "../assets/python.png"
+import next from "../assets/next.png"
 export const conhecimentos = [
     {
         nome: "HTML",
@@ -25,8 +26,14 @@ export const conhecimentos = [
     {
         nome: "React Js",
         imagem: react,
-        experiencia: "6 meses",
+        experiencia: "8 meses",
         descricao: "O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais."
+    },
+    {
+        nome: "Next Js",
+        imagem: next,
+        experiencia: "2 meses",
+        descricao: "Next.js é uma estrutura da web de desenvolvimento front-end React de código aberto criada por Vercel que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React."
     },
     {
         nome: "Python",
