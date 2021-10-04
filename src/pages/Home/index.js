@@ -29,7 +29,6 @@ import { GrLinkedinOption } from "react-icons/gr"
 import { FaWhatsapp } from "react-icons/fa"
 
 
-import programmer from "../../assets/programmer.svg"
 import Header from "../../components/Header"
 import MenuLateral from "../../components/MenuLateral"
 import Project from "../../components/Project"
