@@ -11,7 +11,7 @@ export const MenuContainer = styled.div`
     padding: 0 10px;
     position: fixed;
     z-index: 9;
-    background-color: #202225;//${props => props.theme.auxiliar};
+    background-color: #202225;
     @media(min-width: 850px){
         display:none;
     }
@@ -41,7 +41,7 @@ export const Link = styled.a`
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: #fff;//${props => props.theme.text};
+    color: #fff;
     &:hover{
         opacity: 0.5;
     }
