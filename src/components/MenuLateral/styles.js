@@ -6,36 +6,21 @@ export const MenuContainer = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 270px;
+    min-height: 100vh;
     width: 200px;
-    position: absolute;
-    background-color: ${props => props.theme.auxiliar};
+    position: fixed;
+    z-index: 9;
+    background-color: #202225;//${props => props.theme.auxiliar};
     @media(min-width: 850px){
         display:none;
     }
 `
 
-export const ToggleDiv = styled.div`
-    cursor: pointer;
-    width: 40px;
-    height: 18px;
-    border-radius: 50px;
-    padding: 2px;
-    background-color: ${props => props.theme.primary};
-    display: flex;
-    align-items:center;
-    background-image: url(${props => props.bg});
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: ${props => props.themeName === "light" ? "5%" : "95%"} 50%;
-    //justify-content: ${props => props.themeName !== "light" ? "flex-end" : "flex-start"};
-`
 export const Menu = styled.ul`
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    color: ${props => props.theme.text};
     @media(min-width: 1000px){
         display:none;
     }
@@ -52,7 +37,7 @@ export const Li = styled.li`
 
 export const Link = styled.a`
     cursor: pointer;
-    color: ${props => props.theme.text};
+    color: #fff;//${props => props.theme.text};
     &:hover{
         opacity: 0.5;
     }

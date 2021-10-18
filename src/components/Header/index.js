@@ -30,7 +30,7 @@ const Header = () => {
                 height={18}
                 strokeWidth={1.5}
                 rotate={0}
-                color={themeName ==="light"? "#000" :"#fff"}
+                color={themeName ==="light"? "#fff" :"#fff"}
                 borderRadius={0}
                 animationDuration={0.5}
             />

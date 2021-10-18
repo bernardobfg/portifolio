@@ -20,7 +20,8 @@ import {
     KnowLedgeArea,
     KnowledgeInformation, 
     KnowledgeCollection,
-    ImgContainer
+    ImgContainer,
+    Cover
 } from "./styles"
 
 import { SiGmail } from "react-icons/si"
@@ -37,6 +38,7 @@ import Knowledge from "../../components/Knowledge"
 import { projetos } from "../../data/projetos.js"
 import {conhecimentos} from "../../data/conhecimentos.js"
 import { Dev } from "../../components/Dev";
+import { useProvider } from "../../Provider";
 
 const Home = () => {
     const [selectedKnowledge, setSelectedKnowledge] = useState(conhecimentos[0])
@@ -45,6 +47,7 @@ const Home = () => {
     const [message, setMessage] = useState("")
     const [isLoading, setIsLoading] = useState(false)
     const [isAnimationPlaying, setIsAnimationPlaying] = useState(false)
+    const { openMenu, setOpenMenu} = useProvider();
     const calcularIdade = () => {
         const dataAtual = new Date()
         const ano = dataAtual.getFullYear()
@@ -99,6 +102,7 @@ const Home = () => {
             <Header />
             <MenuLateral />
             <Content>
+                <Cover open={openMenu} onClick={()=>setOpenMenu(false)}/>
                 <Section id="sobreMim">
                     <Title>Sobre Mim</Title>
                     <AboutMe>

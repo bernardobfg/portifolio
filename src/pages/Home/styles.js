@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import blob from "../../assets/blob.svg"
 export const Container = styled.div`
     background-color: ${props => props.theme.background};
     max-width: 100vw;
@@ -8,7 +7,7 @@ export const Container = styled.div`
 `
 export const Content = styled.div`
     max-width: 1000px;
-    margin: 50px auto;
+    margin: 70px auto 50px;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +16,15 @@ export const Content = styled.div`
         padding: 0 20px;
     }
 `
-
+export const Cover = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: ${props => !props.open && "none"};
+    background-color: rgba(0,0,0,.5);
+`
 export const Section = styled.section`
     display: flex;
     flex-direction: column;
