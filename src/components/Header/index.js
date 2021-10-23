@@ -1,19 +1,11 @@
 import { React} from 'react';
 import { useProvider } from "../../Provider"
-import { HeaderContainer, Menu, Li, ToggleDiv, Link, HamburgerBtn} from './styles';
-import Sun from "../../assets/sun.svg"
-import Moon from "../../assets/moon.svg"
+import { HeaderContainer, Menu, Li,  Link, HamburgerBtn} from './styles';
+import {ToggleBtn} from '../ToggleBtn';
 
 const Header = () => {
-    const { openMenu, setOpenMenu, themeName, setThemeName, icon, setIcon } = useProvider();
+    const { openMenu, setOpenMenu, themeName } = useProvider();
 
-
-    const handleClick = async (e) => {
-        e.preventDefault()
-        localStorage.setItem("theme",themeName === "light" ? "dark" : "light")
-        await setThemeName(themeName === "light" ? "dark" : "light")
-        await setIcon(icon === Sun ? Moon : Sun)
-    }
     return (
         <HeaderContainer>
             <Menu>
@@ -35,8 +27,7 @@ const Header = () => {
                 animationDuration={0.5}
             />
             
-
-            <ToggleDiv onClick={(e) => handleClick(e)} bg={icon} themeName={themeName}/>
+            <ToggleBtn/>
         </HeaderContainer>
     );
 }

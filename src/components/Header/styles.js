@@ -43,23 +43,6 @@ export const HamburgerBtn = styled(HamburgerMenu)`
     }
 `
 
-
-export const ToggleDiv = styled.div`
-    cursor: pointer;
-    width: 40px;
-    height: 18px;
-    border-radius: 50px;
-    padding: 2px;
-    background-color: ${props => props.theme.primary};
-    display: flex;
-    margin-right: 50px;
-    align-items:center;
-    background-image: url(${props => props.bg});
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: ${props => props.themeName === "light" ? "5%" : "95%"} 50%;
-`
-
 export const Link = styled.a`
     cursor: pointer;
     color: #fff;

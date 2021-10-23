@@ -6,7 +6,7 @@ export const Container = styled.div`
     padding-bottom: 50px;
 `
 export const Content = styled.div`
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 70px auto 50px;
     display:flex;
     flex-direction: column;
@@ -51,18 +51,16 @@ export const AboutMe = styled.div`
     align-items: center;
     width: 90%;
     margin: 0 auto;
-    gap: 100px;
+
     
     @media(max-width: 850px){
         justify-content:center;
         text-align: center;
-        img{
-            display:none ;
-        }
     }
 `
 export const ImgContainer = styled.div`
     background: none;
+    margin-right: 100px;
     @media(max-width: 850px){
         display:none;
     }
