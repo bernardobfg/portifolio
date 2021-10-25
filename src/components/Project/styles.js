@@ -11,7 +11,7 @@ export const Container = styled.div`
     background-color: ${props => props.theme.auxiliar};
     box-shadow: 0 4px 10px 0 rgba( 31, 38, 135, 0.37 );
     border-radius: 5px;
-    margin: 0 20px;
+    margin: 10px 20px;
     border-top: 10px solid ${props => props.theme.auxiliar};
     transition: border-top 2s;
     &:hover{

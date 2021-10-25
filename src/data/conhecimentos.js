@@ -8,13 +8,13 @@ export const conhecimentos = [
     {
         nome: "HTML",
         imagem: html,
-        experiencia: "2 ano",
+        experiencia: "2 anos",
         descricao: "HTML abreviação para a expressão inglesa HyperText Markup Language, que significa: \"Linguagem de Marcação de Hipertexto\" é uma linguagem de marcação utilizada na construção de páginas na Web."
     },
     {
         nome: "CSS",
         imagem: css,
-        experiencia: "2 ano",
+        experiencia: "2 anos",
         descricao: "Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. Também possuo conhecimento em pre-processadores, como Sass, além de ferramentes de CSS in JS, como o Styled-components."
     },
     {
@@ -38,7 +38,7 @@ export const conhecimentos = [
     {
         nome: "Python",
         imagem: python,
-        experiencia: "2 ano",
+        experiencia: "2 anos",
         descricao: "Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional. Meu primeiro contato com a linguagem foi na faculdade e posteriormente busquei mais conhecimento em cursos."
     },
     

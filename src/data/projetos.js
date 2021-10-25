@@ -23,12 +23,12 @@ export const projetos = [
         linkSite: "https://spotify-bernardobfg.vercel.app/",
         linkGit: "https://github.com/bernardobfg/spotify"
     },
-    {
+    /*{
         name: "Typing Game",
         description: "Projeto bem simples feito durante a Maratona JS3 do Emerson Broga com algumas melhorias posteriores. O intuito do projeto é ser um jogo de digitação para o usuário treinar suas habilidades",
         linkSite: "https://typing-game-bernardobfg.vercel.app/",
         linkGit: "https://github.com/bernardobfg/typing-game"
-    },
+    },*/
     {
         name: "Rock Paper Scissors",
         description: "Projeto inspirado em um desafio do FrontEnd Mentor, que consiste no clássico jogo de pedra papel e tesoura",
@@ -37,7 +37,7 @@ export const projetos = [
     },
     {
         name: "Worldtrip",
-        description: "Projeto com o objetivo de servir como referência turísticas mostrando algumas informações sobre o continente e quantas cidades das 100 mais visitadas encontram-se. Realizado com o objetivo de testar meus conhecimentos com o Chakra UI e NextJS. ",
+        description: "Projeto com o objetivo de servir como referência turísticas mostrando algumas informações sobre o continente e quantas cidades das 100 mais visitadas encontram-se alí. Realizado com o objetivo de testar meus conhecimentos com o Chakra UI e NextJS. ",
         linkSite: "https://worldtrip-bernardobfg.vercel.app/",
         linkGit: "https://github.com/bernardobfg/worldtrip"
     },
