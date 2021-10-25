@@ -117,8 +117,8 @@ const Home = () => {
                             <p>
                                 Meu nome é Bernardo Bevilaqua tenho {calcularIdade()} anos e vivo no Rio de Janeiro.
                                 Atualmente estudo Engenharia Eletrônica e de Computação na UFRJ e no início da pandemia, comecei a estudar desenvolvimento web e me encantei pela área.
-                                Além disso, sou consultor de projetos Frontend na Fluxo Consultoria, desenvolvendo aplicações em React.
-                                Também estou buscando explorar novas áreas e por isso, comecei a estudar tecnologias Back-End.
+                                Além disso, sou desenvolvedor FrontEnd na Fluxo Consultoria, tendo participado da criação de aplicações em React.
+                                Ultimamente, tenho buscado aprender também o desenvolvimento mobile, utilizando React Native.   
                             </p>
 
                         </div>

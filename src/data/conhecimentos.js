@@ -15,7 +15,7 @@ export const conhecimentos = [
         nome: "CSS",
         imagem: css,
         experiencia: "2 ano",
-        descricao: "Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags <style>."
+        descricao: "Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. Também possuo conhecimento em pre-processadores, como Sass, além de ferramentes de CSS in JS, como o Styled-components."
     },
     {
         nome: "JavaScript",
@@ -27,8 +27,8 @@ export const conhecimentos = [
         nome: "React Js",
         imagem: react,
         experiencia: "8 meses",
-        descricao: "O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais."
-    },
+        descricao: "O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web e mantido pelo Facebook. Já participei de diversos projetos profissionais com React, além de ter ministrado capacitações durante processos seletivos"
+    } ,
     {
         nome: "Next Js",
         imagem: next,
@@ -39,7 +39,7 @@ export const conhecimentos = [
         nome: "Python",
         imagem: python,
         experiencia: "2 ano",
-        descricao: "Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte."
+        descricao: "Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional. Meu primeiro contato com a linguagem foi na faculdade e posteriormente busquei mais conhecimento em cursos."
     },
     
 ]

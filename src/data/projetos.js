@@ -35,6 +35,13 @@ export const projetos = [
         linkSite: "https://rock-paper-scissors-bernardobfg.vercel.app/",
         linkGit: "https://github.com/bernardobfg/rock-paper-scissors"
     },
+    {
+        name: "Worldtrip",
+        description: "Projeto com o objetivo de servir como referência turísticas mostrando algumas informações sobre o continente e quantas cidades das 100 mais visitadas encontram-se. Realizado com o objetivo de testar meus conhecimentos com o Chakra UI e NextJS. ",
+        linkSite: "https://worldtrip-bernardobfg.vercel.app/",
+        linkGit: "https://github.com/bernardobfg/worldtrip"
+    },
+
     /*{
         name: "TodoApp",
         description: "Projeto realizado com objetivo de praticar um pouco mais o funcionamento do firebase. Nele o usuário pode fazer login e cadastras tarefas a serem realizadas (Todos), marcá-las como concluídas e apagá-las",
