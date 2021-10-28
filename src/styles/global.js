@@ -41,7 +41,7 @@ export default createGlobalStyle`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        @media(max-width: 768px){
+        @media(max-width: 1000px){
             max-width: 80vw;
             padding: 20px;
         }

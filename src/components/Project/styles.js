@@ -21,8 +21,11 @@ export const Container = styled.div`
 `
 
 export const ProjectGif = styled.img`
-    width: 100%;
-    max-width: 300px;
+    width: 350px;
+    max-width: 100%;
+    @media (max-width: 768px) {
+        max-width: 90%;
+    }
 `
 export const ModalContainer = styled.div`
     background-color: ${props => props.theme.auxiliar};
@@ -46,8 +49,30 @@ export const ModalContent = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items:center;
+    @media (max-width: 768px) {
+        margin-left: 0;
+    }
 `
-
+export const ModalTitle = styled.h1`
+    letter-spacing: 1px;
+    text-align:center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: ${props => props.theme.text};
+    @media(max-width: 768px){
+        display: none;
+    }
+`
+export const ModalTitleSmallDevices = styled.h1`
+    letter-spacing: 1px;
+    text-align:center;
+    font-size: 2em;
+    margin-bottom:10px;
+    color: ${props => props.theme.text};
+    @media(min-width: 768px){
+        display: none;
+    }
+`
 export const ProjectImage = styled.img`
     width: 100%;
 `
@@ -64,6 +89,9 @@ export const ProjectDescription = styled.p`
     text-align:justify;
     color: ${props => props.theme.text};
     margin: 20px 0;
+    @media(max-width: 768px){
+        width: 90%;
+    }
 `
 
 export const ProjectLinks = styled.div`

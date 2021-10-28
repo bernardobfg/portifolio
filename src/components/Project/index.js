@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-modal"
-import { ProjectName, Container, ModalContainer, ModalContent, ProjectDescription, ProjectLinks, ProjectLink, ProjectImage, ProjectGif, ViewMoreButton } from "./styles"
+import { ProjectName, Container, ModalContainer, ModalContent,ModalTitle, ModalTitleSmallDevices,ProjectDescription, ProjectLinks, ProjectLink, ProjectImage, ProjectGif, ViewMoreButton } from "./styles"
 import { AiFillGithub } from "react-icons/ai"
 import { BiLink } from "react-icons/bi"
 import {FaSearchPlus} from "react-icons/fa"
@@ -19,9 +19,10 @@ const Project = ({ project }) => {
                 className="react-modal-content"
             >
                 <ModalContainer>
+                    <ModalTitleSmallDevices>{project.name}</ModalTitleSmallDevices>
                     <ProjectGif src={project.gif} />
                     <ModalContent>
-                        <ProjectName>{project.name}</ProjectName>
+                        <ModalTitle>{project.name}</ModalTitle>
                         <ProjectDescription>{project.description}</ProjectDescription>
                         <ProjectLinks>
                             <ProjectLink
