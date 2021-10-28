@@ -17,8 +17,40 @@ export const Container = styled.div`
     &:hover{
         border-top: 10px solid ${props => props.theme.primary};
     }
+    
 `
 
+export const ProjectGif = styled.img`
+    width: 100%;
+    max-width: 300px;
+`
+export const ModalContainer = styled.div`
+    background-color: ${props => props.theme.auxiliar};
+    width: 100%;
+    height: 100%;
+    max-width: 90vw;
+    display: flex;
+    max-width: 700px;
+    justify-content: space-between;
+    align-items:center;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+
+`
+
+export const ModalContent = styled.div`
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+`
+
+export const ProjectImage = styled.img`
+    width: 100%;
+`
 export const ProjectName = styled.h1`
     letter-spacing: 1px;
     text-align:center;
@@ -27,10 +59,11 @@ export const ProjectName = styled.h1`
 `
 
 export const ProjectDescription = styled.p`
-    font-size:1.1em;
-    width: 280px;
-    text-align:center;
+    font-size:1.2em;
+    width: 300px;
+    text-align:justify;
     color: ${props => props.theme.text};
+    margin: 20px 0;
 `
 
 export const ProjectLinks = styled.div`
@@ -53,5 +86,29 @@ export const ProjectLink = styled.a`
     justify-content: center;
     &:hover{
         opacity: 0.8;
+    }
+    svg{
+        margin-right: 5px;
+    }
+`
+
+export const ViewMoreButton = styled.button`
+    color: #F0F0F0;
+    background-color: ${props => props.theme.primary};
+    margin: 10px 15px 20px;
+    font-size: 1.1em;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 40px;
+    width: 180px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        opacity: 0.8;
+    }
+    svg{
+        margin-right: 5px;
     }
 `
