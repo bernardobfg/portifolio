@@ -26,17 +26,17 @@ const Project = ({ project }) => {
                         <ProjectDescription>{project.description}</ProjectDescription>
                         <ProjectLinks>
                             <ProjectLink
-                                href={project.github}
+                                href={project.linkGit}
                                 target="_blank"
                             >
                                 <AiFillGithub size="1.2em" />
                                 GitHub
                             </ProjectLink>
                             <ProjectLink
-                                href={project.link}
+                                href={project.linkSite}
                                 target="_blank">
                                 <BiLink size="16px" />
-                                Deploy
+                                WebSite
                             </ProjectLink>
                         </ProjectLinks>
                     </ModalContent>
