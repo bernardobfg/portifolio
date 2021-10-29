@@ -20,13 +20,12 @@ import worldtripGif from '../assets/animated/worldtrip.gif'
 import todoImg from '../assets/todo.PNG'
 import todoGif from '../assets/animated/todo.gif'
 
-
 export const projetos = [
     {
         name: "Letmeask",
         description: "Projeto realizado durante a sexta edição do NLW, da rocket seat. A ideia é ser uma ferramenta para as pessoas que realizam lives de pergunta e resposta. Para isso, os usuários podem curtir as perguntas uns dos outros e essas serão ordenadas pelo número de curtidas.",
         linkSite: "https://letmeask-e633a.web.app/",
-        linkGit: "https://github.com/bernardobfg/spacetraveling",
+        linkGit: "https://github.com/bernardobfg/nlw-Letmeask",
         gif: letMeAskGif,
         image: letMeAskImg
     },
@@ -34,7 +33,7 @@ export const projetos = [
         name: "Spacetraveling",
         description: "Desafio proposto ao final do módulo de Next js do ignite da RocketSeat. O projeto se baseia num blog onde são listados post retirados do CMS Prismic",
         linkSite: "https://bernardobfg-spacetraveling.vercel.app/",
-        linkGit: "https://github.com/bernardobfg/nlw-LetmeaskGif",
+        linkGit: "https://github.com/bernardobfg/spacetraveling",
         gif: spaceTravelingGif,
         image: spaceTravelingImg
     },
