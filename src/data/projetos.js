@@ -13,8 +13,12 @@ import rpsGif from '../assets/animated/rps.gif'
 import worldtripImg from '../assets/worldtrip.PNG'
 import worldtripGif from '../assets/animated/worldtrip.gif'
 
-import typingImg from '../assets/typing.PNG'
-import typingGif from '../assets/animated/typing.gif'
+//import typingImg from '../assets/typing.PNG'
+//import typingGif from '../assets/animated/typing.gif'
+
+
+import todoImg from '../assets/todo.PNG'
+import todoGif from '../assets/animated/todo.gif'
 
 
 export const projetos = [
@@ -58,21 +62,21 @@ export const projetos = [
         gif: worldtripGif,
         image: worldtripImg
     },
-    {
+    /*{
         name: "Typing Game",
         description: "Projeto bem simples feito durante a Maratona JS3 do Emerson Broga com algumas melhorias posteriores. O intuito do projeto é ser um jogo de digitação para o usuário treinar suas habilidades",
         linkSite: "https://typing-game-bernardobfg.vercel.app/",
         linkGit: "https://github.com/bernardobfg/typing-game",
         gif: typingGif,
         image: typingImg
-    },
+    },*/
 
-    /*{
+    {
         name: "TodoApp",
-        description: "Projeto realizado com objetivo de praticar um pouco mais o funcionamento do firebase. Nele o usuário pode fazer login e cadastras tarefas a serem realizadas (Todos), marcá-las como concluídas e apagá-las",
-        linkSite: "#",
+        description: "O clássico Projeto de TodoList em que o usuário pode cadastrar uma nova Tarefa, apagá-la ou defini-la como concluída. Projeto realizado com o objetivo de aprender a utilizar bibliotecas de Drag and Drop",
+        linkSite: "https://bernardobfg-todoapp.vercel.app/",
         linkGit: "https://github.com/bernardobfg/todoapp",
-        image: letMeAskGif,
-        image: letMeAskImg
-    }*/
+        gif: todoGif,
+        image: todoImg
+    }
 ]
